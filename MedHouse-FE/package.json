@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -38,5 +39,9 @@
     "style-loader": "^3.3.3",
     "vite": "^4.5.0"
   },
+  "engines": {
+  "node": "18.x",
+  "pnpm": "8.x"
+},
   "proxy": "http://localhost:5000"
 }
