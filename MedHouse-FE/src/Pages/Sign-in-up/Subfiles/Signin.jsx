@@ -10,7 +10,7 @@ function Signin({ setSignin, setLoginState }) {
 
   function signInUser(e) {
     e.preventDefault();
-    fetch("http://localhost:5000/api/user/signin", {
+    fetch("https://med-house-main-server-med.vercel.app/api/user/signin", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

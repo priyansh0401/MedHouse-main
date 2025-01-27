@@ -15,7 +15,7 @@ function AttendeeTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:5000/api/accommodation")
+      .get("https://med-house-main-server-med.vercel.app/api/accommodation")
       .then((response) => {
         setAttendees(response.data);
       })

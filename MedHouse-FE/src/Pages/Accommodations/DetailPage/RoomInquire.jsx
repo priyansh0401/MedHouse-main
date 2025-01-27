@@ -22,7 +22,7 @@ function RoomInquire() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/inquiries", formData);
+      await axios.post("https://med-house-main-server-med.vercel.app/api/inquiries", formData);
       Swal.fire({
         icon: "success",
         title: "Success!",

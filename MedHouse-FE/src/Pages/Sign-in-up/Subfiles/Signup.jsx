@@ -18,7 +18,7 @@ function Signup({ setSignin }) {
     if (password === conPassword) {
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/user/signup",
+          "https://med-house-main-server-med.vercel.app/api/user/signup",
           {
             name,
             email,

@@ -34,7 +34,7 @@ function Clearance() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/clearance", formData)
+      .post("https://med-house-main-server-med.vercel.app/api/clearance", formData)
       .then((response) => {
         // Handle success
         console.log(response.data); // Log the response for debugging

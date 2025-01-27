@@ -14,7 +14,7 @@ function LeaveRequestTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:5000/api/leave")
+      .get("https://med-house-main-server-med.vercel.app/api/leave")
       .then((response) => {
         setLeaveRequests(response.data);
       })
@@ -26,7 +26,7 @@ function LeaveRequestTable() {
   const handleStatusChange = async (id, newStatus) => {
     try {
       // Update the status of the leave request in the backend
-      await axios.patch(`http://localhost:5000/api/leave/${id}/status`, {
+      await axios.patch(`https://med-house-main-server-med.vercel.app/api/leave/${id}/status`, {
         status: newStatus,
       });
 

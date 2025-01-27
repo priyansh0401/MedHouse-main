@@ -14,7 +14,7 @@ function MentoringTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:5000/api/mentoring")
+      .get("https://med-house-main-server-med.vercel.app/api/mentoring")
       .then((response) => {
         setMentoringRequests(response.data);
       })
@@ -26,7 +26,7 @@ function MentoringTable() {
   const handleStatusChange = async (id, newStatus) => {
     try {
       // Update the status of the mentoring request in the backend
-      await axios.patch(`http://localhost:5000/api/mentoring/${id}/status`, {
+      await axios.patch(`https://med-house-main-server-med.vercel.app/api/mentoring/${id}/status`, {
         status: newStatus,
       });
 

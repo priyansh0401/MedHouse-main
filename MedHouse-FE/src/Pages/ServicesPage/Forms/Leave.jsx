@@ -22,7 +22,7 @@ function Leave() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/leave",
+        "https://med-house-main-server-med.vercel.app/api/leave",
         formData
       );
 

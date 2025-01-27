@@ -30,14 +30,14 @@ function StatisticsTab() {
   const fetchData = async () => {
     try {
       const endpoints = [
-        "http://localhost:5000/api/accommodation",
-        "http://localhost:5000/api/inquiries",
-        "http://localhost:5000/api/cleaning",
-        "http://localhost:5000/api/medical",
-        "http://localhost:5000/api/clearance",
-        "http://localhost:5000/api/mentoring",
-        "http://localhost:5000/api/leave",
-        "http://localhost:5000/api/user/getAllUsers",
+        "https://med-house-main-server-med.vercel.app/api/accommodation",
+        "https://med-house-main-server-med.vercel.app/api/inquiries",
+        "https://med-house-main-server-med.vercel.app/api/cleaning",
+        "https://med-house-main-server-med.vercel.app/api/medical",
+        "https://med-house-main-server-med.vercel.app/api/clearance",
+        "https://med-house-main-server-med.vercel.app/api/mentoring",
+        "https://med-house-main-server-med.vercel.app/api/leave",
+        "https://med-house-main-server-med.vercel.app/api/user/getAllUsers",
       ];
 
       const counts = await Promise.all(

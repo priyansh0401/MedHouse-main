@@ -43,7 +43,7 @@ function Cleaning() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/cleaning",
+        "https://med-house-main-server-med.vercel.app/api/cleaning",
         formData
       );
 
