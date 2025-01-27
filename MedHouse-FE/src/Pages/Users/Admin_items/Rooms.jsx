@@ -8,7 +8,7 @@ const Room = () => {
     const fetchData = async () => {
       try {
         const uri =
-          "mongodb+srv://cs50tharindu:CXE0jvEDEdfppIHE@cluster0.g3vaocn.mongodb.net/Buildings?retryWrites=true&w=majority";
+          "mongodb+srv://goeltanya216:abcdabcd@cluster0.pvhn7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
         const client = new MongoClient(uri);
         await client.connect();
         const db = client.db("Buildings");
