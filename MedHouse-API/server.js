@@ -33,6 +33,11 @@ app.use("/api/mentoring", mentoring);
 app.use("/api/leave", leave);
 app.use("/api/user", user);
 
+app.get("/", (req, res) => {
+  res.status(200).send("Backend is running!");
+});
+
+
 // Start the Server
 const server = app.listen(port, () =>
   console.log(`Server running on port ${port} 🔥`)
